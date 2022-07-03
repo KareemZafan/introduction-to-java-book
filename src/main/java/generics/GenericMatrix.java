@@ -2,24 +2,6 @@ package generics;
 
 public abstract class GenericMatrix<E extends Number> {
 
-    /* public static void printResult(Number[][] m1, Number[][] m2, Number[][] m3, char op) {
-         for (int i = 0; i < m1.length; i++) {
-             for (int j = 0; j < m1[0].length; j++)
-                 System.out.print(" " + m1[i][j]);
-             if (i == m1.length / 2) System.out.print(" " + op + " ");
-             else System.out.print("    ");
-             for (int j = 0; j < m2.length; j++)
-                 System.out.print(" " + m2[i][j]);
-             if (i == m1.length / 2) System.out.print("  =  ");
-             else System.out.print("    ");
-             for (int j = 0; j < m3.length; j++)
-                 System.out.print(m3[i][j] + " ");
-             System.out.println();
-         }
-
-
-     }
- */
     protected abstract E add(E obj1, E obj2);
 
     protected abstract E multiply(E obj1, E obj2);
